@@ -9,9 +9,9 @@ import iceLogo from "@/logos/ice-logo.jpeg";
 
 export default function RealizadoresSection() {
   return (
-    <div className="flex flex-col w-full p-5 md:pl-24">
+    <div id="realizadores" className="flex flex-col w-full p-5 md:pl-24">
       <div>
-        <h2 className="pt-20 pb-10 font-medium text-md leading-tight">
+        <h2 className="pb-10 font-medium text-md leading-tight">
           Criação original:
         </h2>
         <div className="flex items-center">

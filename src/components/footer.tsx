@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div>
-      <div className="w-full pl-24 pr-24 pt-8 pb-8 justify-between items-center hidden md:flex lg:flex">
+      <div className="w-full pl-24 pr-24 pt-8 pb-8 justify-between items-center hidden md:flex lg:flex bg-custom-yellow">
         <div>
           <Image src={logo} alt="Modelo C 2.0" />
         </div>
@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="pl-24 pr-24 flex flex-col justify-center items-center">
+      <div className="pt-10 pl-24 pr-24 flex flex-col justify-center items-center bg-custom-yellow">
       <div>
             <Image
               src={licenseLogo}
