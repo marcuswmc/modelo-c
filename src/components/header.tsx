@@ -1,7 +1,7 @@
 import logo from "@/logos/logo-modelo-c-header.svg"
 import Image from "next/image"
 import DesktopNav from "./desktop-nav"
-import MobileNav from "./mobile-nav"
+
 
 
 export default function Header() {

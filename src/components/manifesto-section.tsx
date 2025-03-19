@@ -1,6 +1,6 @@
 export default function ManifestoSection() {
   return (
-    <div className="w-full pt-20 pb-20 pl-24 pr-24 bg-custom-green">
+    <div id="manifesto" className="w-full pt-24 pb-24 pl-24 pr-24 bg-custom-green">
       <div>
         <span className="pt-4.5 pb-4.5 pl-8 pr-8 rounded-full font-medium bg-custom-yellow text-title">
           Manifesto
