@@ -1,19 +1,19 @@
 export default function ManifestoSection() {
   return (
-    <div className="w-full pt-20 pb-20 pl-24 pr-24 bg-custom-green">
+    <div className="w-full pt-20 pb-20 bg-custom-green pl-5 pr-5 md:pl-24 md:pr-24 md:justify-items-normal">
       <div>
         <span className="pt-4.5 pb-4.5 pl-8 pr-8 rounded-full font-medium bg-custom-yellow text-title">
           Manifesto
         </span>
       </div>
 
-      <div>
-        <h2 className="pt-20 pb-10 font-medium text-title text-white leading-tight">
-          A integração crítica <br />
+      <div className="flex-col items-center md:block">
+        <h2 className="pt-10 pb-10 font-medium text-title text-white leading-tight md:pt-20">
+          A integração crítica <br/>
           precisa ganhar terreno
         </h2>
 
-        <p className="text-white pr-30">
+        <p className="text-white md:pr-30">
           Precisamos avançar em práticas e reflexões integrativas que, de forma
           crítica e responsável, favoreçam um enfrentamento mais efetivo das
           desigualdades, injustiças sociais e dos desafios ambientais complexos.

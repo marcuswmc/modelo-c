@@ -1,18 +1,18 @@
 import icon from "../icons/bullet-icon.svg";
 import Image from "next/image";
 
-export default function PartidaFunction() {
+export default function PartidaSection() {
   return (
-    <div className="w-full pt-20 pb-20 pl-24 pr-24">
+    <div className="w-full pt-20 pb-20 pl-5 pr-5 md:pl-24 md:pr-24 md:justify-items-normal">
       <div>
         <span className="pt-4.5 pb-4.5 pl-8 pr-8 rounded-full font-medium bg-custom-green text-title">
           Ponto de Partida
         </span>
       </div>
 
-      <div className="flex justify-between items-start gap-x-16">
-        <div className="w-1/2">
-          <h2 className="pt-20 pb-10 font-medium text-title">
+      <div className="justify-items-start md:flex md:justify-between md:items-start md:gap-x-16">
+        <div className="md:w-1/2">
+          <h2 className="pt-10 pb-10 font-medium text-title md:pt-20">
             Para quê serve?
           </h2>
           <div className="space-y-6">
@@ -31,8 +31,8 @@ export default function PartidaFunction() {
           </div>
         </div>
 
-        <div className="w-1/2">
-          <h2 className="pt-20 pb-10 font-medium text-title">Para quem é?</h2>
+        <div className="md:w-1/2">
+          <h2 className="pt-10 pb-10 font-medium text-title md:pt-20">Para quem é?</h2>
           <div className="space-y-6">
             {[
               "Quem deseja criar ou lidera e opera um negócio de impacto - empreendedores/as e equipes.",
@@ -43,7 +43,7 @@ export default function PartidaFunction() {
               "Qualquer pessoa interessada na temática de gestão de impacto.",
             ].map((text, index) => (
               <div key={index} className="flex gap-x-5 items-start">
-                <Image src={icon} alt="Ícone de bullet" width={20} height={20} />
+                <Image src={icon} alt="Ícone de bullet" />
                 <p>{text}</p>
               </div>
             ))}
