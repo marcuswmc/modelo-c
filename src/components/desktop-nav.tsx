@@ -22,7 +22,7 @@ const links = [
   },
 ];
 
-export default function Nav() {
+export default function DesktopNav() {
   const pathname = usePathname();
 
   return (
@@ -33,8 +33,8 @@ export default function Nav() {
             href={link.path}
             key={index}
             className={`${
-              link.path === pathname && "pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium text-sm cursor-pointer"
-            } hover:bg-custom-purple hover:border-custom-purple transition-colors`}
+              link.path === pathname && "hover:bg-custom-purple border-custom-purple bg-custom-purple transition-colors"
+            } pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border border-black font-medium text-sm cursor-pointer hover:border-custom-purple hover:bg-custom-purple`}
           >
             {link.name}
           </Link>
@@ -50,15 +50,3 @@ export default function Nav() {
 
 
 
-// export default function DesktopNav() {
-//   return (
-//     <nav>
-//       <ul className="flex gap-8">
-//         <button className="pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium hover:bg-custom-purple hover:border-custom-purple transition-colors text-sm cursor-pointer">Inicio</button>  
-//         <button className="pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium hover:bg-custom-purple hover:border-custom-purple transition-colors text-sm cursor-pointer">Manifesto</button> 
-//         <button className="pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium hover:bg-custom-purple hover:border-custom-purple transition-colors text-sm cursor-pointer">Modelo C 2.0</button> 
-//         <button className="pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium hover:bg-custom-purple hover:border-custom-purple transition-colors text-sm cursor-pointer ">Realizadores</button> 
-//       </ul> 
-//     </nav>
-//   )
-// }
