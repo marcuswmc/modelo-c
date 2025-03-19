@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
 
-      <div className="w-full pt-5 mt-12 md:pt-20 lg:pt-20 flex-col space-y-40">
+      <div className="w-full pt-5 mt-12 md:mt-0 md:pt-20 lg:pt-20 flex-col space-y-40">
         <Hero />
         <ManifestoSection/>
         <PartidaFunction/>
