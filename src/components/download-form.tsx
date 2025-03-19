@@ -36,7 +36,7 @@ export default function DownloadForm() {
   };
 
   const openPDF = () => {
-    const pdfUrl = "/pdfs/arquivo.pdf";
+    const pdfUrl = "/guia_modelo_c.pdf";
     window.open(pdfUrl, "_blank"); 
   };
 
