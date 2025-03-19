@@ -1,5 +1,9 @@
+import Hero from "@/components/hero";
+
 export default function Home() {
-  return (
-    <h2>Modelo C</h2>
+  return (    
+    <div className="w-full pl-24 pr-24 pt-20 flex-col gap-40">
+      <Hero/>
+    </div>
   );
 }

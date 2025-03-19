@@ -11,6 +11,11 @@
 }
 
 @theme inline {
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-regular: var(--font-rl);
@@ -18,11 +23,12 @@
 
   --color-custom-purple: var(--purple);
   --color-custom-green: var(--green);
-  --color-custom-orange: var(--orange)
+  --color-custom-orange: var(--orange);
   --color-custom-yellow: var(--yellow);
 
   --text-sm: 16px;
   --text-md: 18px;
+  --text-title: 48px;
   --text-lg: 62px;
 
 

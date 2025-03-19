@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className="w-full pl-24 pr-24 pt-8 pb-8 flex justify-between items-center">
       <div>
-        <Image src={logo}/>
+        <Image src={logo} alt="Modelo C 2.0"/>
       </div>
       <div>
         <DesktopNav />
