@@ -4,12 +4,12 @@ import heroBalance from "@/logos/hero-balance.png";
 import Image from "next/image";
 export default function Hero() {
   return (
-    <div className="flex items-center pl-24 pr-24">
-      <div className="flex flex-col gap-16 w-[50%]">
+    <div className="flex flex-col md:flex-row lg:fle-row items-start md:items-center pl-5 pr-5  md:pl-24 md:pr-24 ">
+      <div className="flex flex-col gap-16 w-full md:w-[50%] lg:w-[50%]">
         <div>
           <Image src={logo} alt="Modelo C 2.0" />
         </div>
-        <div className=" flex flex-col gap-5">
+        <div className="flex flex-col gap-5">
           <p className="text-sm">
             <span className="font-medium">O Modelo C é mais do que uma ferramenta</span> — é um caminho para
             fortalecer negócios impacto socioambiental que transformam o mundo
@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
         <div></div>
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center justify-end w-full md:w-[50%] lg:w-[50%]">
         <Image src={heroBalance} alt="balance" width={550} quality={100} />
       </div>
     </div>

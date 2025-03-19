@@ -5,6 +5,9 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 
+import logo from "@/logos/logo-modelo-c-header.svg";
+import Image from "next/image";
+
 const links = [
   {
     name: "Inicio",
@@ -24,7 +27,6 @@ const links = [
   },
 ];
 
-
 export default function MobileNav() {
   const pathname = usePathname();
   return (
@@ -35,17 +37,20 @@ export default function MobileNav() {
       <SheetContent className="flex flex-col">
         {/* logo */}
         <div className="mt-32 mb-40 text-center text-2xl">
-          <Link href="/">
-            Imm
-          </Link>
+          <Image src={logo} alt="Modelo C 2.0" />
         </div>
         {/* nav */}
         <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, index) => {
             return (
-              <Link href={link.path} key={index} className={`${
-                link.path === pathname && 'text-accent border-b-2 border-accent'
-              } text-xl capitalize hover:text-accent transition-all`}>
+              <Link
+                href={link.path}
+                key={index}
+                className={`${
+                  link.path === pathname &&
+                  "text-accent border-b-2 border-accent"
+                } text-xl capitalize hover:text-accent transition-all`}
+              >
                 {link.name}
               </Link>
             );
