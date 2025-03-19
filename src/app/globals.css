@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --purple: #C9A1FF;
+  --green: #85DDAE;
+  --orange: #FF704D;
+  --yellow: #F4F98E;
 }
 
 @theme inline {
@@ -10,6 +15,18 @@
   --color-foreground: var(--foreground);
   --font-regular: var(--font-rl);
   --font-medium: var(--font-md);
+
+  --color-custom-purple: var(--purple);
+  --color-custom-green: var(--green);
+  --color-custom-orange: var(--orange)
+  --color-custom-yellow: var(--yellow);
+
+  --text-sm: 16px;
+  --text-md: 18px;
+  --text-lg: 62px;
+
+
+
 }
 
 

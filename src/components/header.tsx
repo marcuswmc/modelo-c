@@ -5,7 +5,7 @@ import DesktopNav from "./desktop-nav"
 
 export default function Header() {
   return (
-    <div className="w-full pl-24 pr-24 pt-8 pb-8 flex justify-between">
+    <div className="w-full pl-24 pr-24 pt-8 pb-8 flex justify-between items-center">
       <div>
         <Image src={logo}/>
       </div>
@@ -13,7 +13,7 @@ export default function Header() {
         <DesktopNav />
       </div>
       <div>
-        buttom
+        {/* buttom */}
       </div>
     </div>
   )
