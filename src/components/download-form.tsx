@@ -24,16 +24,31 @@ export default function DownloadForm() {
     defaultValues: { name: "", email: "", company: "" },
   });
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log("Dados enviados:", data);
-
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
-
-    setTimeout(() => {
-      openPDF();
+  
+    try {
+      const response = await fetch("/api/download", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+  
+      const result = await response.json();
+  
+      if (response.ok) {
+        console.log("Sucesso:", result.message);
+        openPDF();
+      } else {
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error("Erro ao enviar:", error);
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
+  
 
   const openPDF = () => {
     const pdfUrl = "/guia_modelo_c.pdf";
