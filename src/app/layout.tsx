@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
+import { Analytics } from "@vercel/analytics/react"
+
 
 const regularFont = localFont({
   src: '../fonts/NeueHaasDisplay-Roman.woff2',
@@ -31,13 +33,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${regularFont.variable} ${mediumFont.variable} antialiased`}
       >
         <Header />
         {children}
         <Footer/>
+        <Analytics />
       </body>
     </html>
   );
