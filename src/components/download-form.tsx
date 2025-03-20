@@ -9,10 +9,7 @@ import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 
-import { track } from '@vercel/analytics';
- 
-
-
+import { track } from "@vercel/analytics";
 
 const formSchema = z.object({
   name: z.string().min(1, "O nome é obrigatório"),
@@ -30,20 +27,19 @@ export default function DownloadForm() {
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
-  
+
     try {
       const response = await fetch("/api/download", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-  
+
       const result = await response.json();
-  
+
       if (response.ok) {
         console.log("Sucesso:", result.message);
         openPDF();
-        track('Download Guia Modelo C');
       } else {
         alert(result.message);
       }
@@ -53,11 +49,10 @@ export default function DownloadForm() {
       setIsSubmitting(false);
     }
   };
-  
 
   const openPDF = () => {
     const pdfUrl = "/guia_modelo_c.pdf";
-    window.open(pdfUrl, "_blank"); 
+    window.open(pdfUrl, "_blank");
   };
 
   return (
@@ -87,7 +82,12 @@ export default function DownloadForm() {
               <FormItem>
                 <Label htmlFor="email">Email</Label>
                 <FormControl>
-                  <Input id="email" type="email" placeholder="Seu email" {...field} />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Seu email"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -102,7 +102,11 @@ export default function DownloadForm() {
               <FormItem>
                 <Label htmlFor="company">Empresa (Opcional)</Label>
                 <FormControl>
-                  <Input id="company" placeholder="Nome da empresa" {...field} />
+                  <Input
+                    id="company"
+                    placeholder="Nome da empresa"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -110,7 +114,14 @@ export default function DownloadForm() {
           />
 
           {/* Botão de Envio */}
-          <Button type="submit" className="w-full bg-custom-purple" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            className="w-full bg-custom-purple"
+            disabled={isSubmitting}
+            onClick={() => {
+              track("Download Guia Modelo C");
+            }}
+          >
             {isSubmitting ? "Aguarde..." : "Continuar"}
           </Button>
         </form>
