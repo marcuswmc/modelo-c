@@ -2,7 +2,7 @@ import DownloadForm from "./download-form";
 
 export default function FormSection() {
   return (
-    <div id="modeloc" className="flex flex-col md:flex-row w-full pl-5 md:pl-24">
+    <div className="flex flex-col md:flex-row w-full pl-5 md:pl-24">
       <div className="w-full md:w-[50%]">
         <div>
           <span className="pt-4.5 pb-4.5 pl-8 pr-8 rounded-full font-medium bg-custom-purple text-title">

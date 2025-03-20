@@ -6,7 +6,7 @@ import DesktopNav from "./desktop-nav"
 
 export default function Header() {
   return (
-    <div className="w-full pl-24 pr-24 pt-8 pb-8 justify-between items-center hidden md:flex lg:flex">
+    <div className="w-full h-20 pl-24 pr-24 pt-8 pb-8 justify-between items-center hidden md:flex lg:flex fixed top-0 left-0 bg-white z-50 shadow-md">
       <div>
         <Image src={logo} alt="Modelo C 2.0"/>
       </div>
