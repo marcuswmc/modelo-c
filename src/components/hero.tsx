@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="flex flex-col md:flex-row lg:fle-row items-start md:items-center pl-5 pr-5  md:pl-24 md:pr-24 ">
-      <div className="flex flex-col gap-16 w-full md:w-[50%] lg:w-[50%]">
+      <div className="flex flex-col gap-16 w-full md:w-[50%] lg:w-[50%] md:pr-10">
         <div>
           <Image src={logo} alt="Modelo C 2.0" />
         </div>
