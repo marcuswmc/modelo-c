@@ -6,7 +6,7 @@ export default function PartidaSection() {
     <div className="w-full pl-5 pr-5 md:pl-24 md:pr-24 md:justify-items-normal">
       <div>
         <span className="pt-4.5 pb-4.5 pl-8 pr-8 rounded-full font-medium bg-custom-green text-[30px]  md:text-title">
-          Ponto de Partida
+          Pontos de Partida
         </span>
       </div>
 

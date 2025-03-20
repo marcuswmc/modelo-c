@@ -64,9 +64,9 @@ export default function DownloadForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <Label htmlFor="name">Nome</Label>
+                <Label htmlFor="name">Nome Completo</Label>
                 <FormControl>
-                  <Input id="name" placeholder="Seu nome" {...field} />
+                  <Input id="name" placeholder="Seu nome completo" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -99,11 +99,11 @@ export default function DownloadForm() {
             name="company"
             render={({ field }) => (
               <FormItem>
-                <Label htmlFor="company">Empresa (Opcional)</Label>
+                <Label htmlFor="company">Organização (Opcional)</Label>
                 <FormControl>
                   <Input
                     id="company"
-                    placeholder="Nome da empresa"
+                    placeholder="Nome da Organização"
                     {...field}
                   />
                 </FormControl>
