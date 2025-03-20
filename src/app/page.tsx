@@ -7,7 +7,7 @@ import RealizadoresSection from "@/components/realizadores-section";
 export default function Home() {
   return (
     <>
-      <div className="w-full pt-10 mt-12 md:mt-0 md:pt-20 lg:pt-20 flex-col space-y-30">
+      <div className="w-full pt-10 mt-12 md:mt-0 md:pt-20 lg:pt-20 flex-col space-y-30 overflow-hidden">
         <div id="inicio" className="scroll-mt-36">
           <Hero />
         </div>
