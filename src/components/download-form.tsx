@@ -9,7 +9,6 @@ import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 
-import { track } from "@vercel/analytics";
 
 const formSchema = z.object({
   name: z.string().min(1, "O nome é obrigatório"),
@@ -118,9 +117,6 @@ export default function DownloadForm() {
             type="submit"
             className="w-full bg-custom-purple"
             disabled={isSubmitting}
-            onClick={() => {
-              track("Download Guia Modelo C");
-            }}
           >
             {isSubmitting ? "Aguarde..." : "Continuar"}
           </Button>
