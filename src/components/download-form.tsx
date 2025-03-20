@@ -9,6 +9,10 @@ import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 
+import { track } from '@vercel/analytics';
+ 
+
+
 
 const formSchema = z.object({
   name: z.string().min(1, "O nome é obrigatório"),
@@ -39,6 +43,7 @@ export default function DownloadForm() {
       if (response.ok) {
         console.log("Sucesso:", result.message);
         openPDF();
+        track('Download Guia Modelo C');
       } else {
         alert(result.message);
       }
