@@ -31,18 +31,6 @@ export default function DownloadForm() {
       window.location.href = pdfUrl;
     }
 
-    if (typeof window !== "undefined" && window.va) {
-      window.va("event", {
-        name: "pdf_download",
-        properties: {
-          arquivo: "guia_modelo_c.pdf",
-          nome: data.name,
-          email: data.email,
-          empresa: data.company || "Não informado",
-        },
-      });
-    }
-    
     setIsSubmitting(true);
 
     try {
