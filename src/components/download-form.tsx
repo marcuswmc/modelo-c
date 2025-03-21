@@ -9,7 +9,6 @@ import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 
-
 const formSchema = z.object({
   name: z.string().min(1, "O nome é obrigatório"),
   email: z.string().email("Digite um email válido"),
@@ -25,6 +24,13 @@ export default function DownloadForm() {
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    const pdfUrl = "/guia_modelo_c.pdf";
+    const newTab = window.open(pdfUrl, "_blank");
+
+    if (!newTab) {
+      window.location.href = pdfUrl;
+    }
+    
     setIsSubmitting(true);
 
     try {
@@ -38,7 +44,6 @@ export default function DownloadForm() {
 
       if (response.ok) {
         console.log("Sucesso:", result.message);
-        openPDF();
       } else {
         alert(result.message);
       }
@@ -47,11 +52,6 @@ export default function DownloadForm() {
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  const openPDF = () => {
-    const pdfUrl = "/guia_modelo_c.pdf";
-    window.open(pdfUrl, "_blank");
   };
 
   return (
