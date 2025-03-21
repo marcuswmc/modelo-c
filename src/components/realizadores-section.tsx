@@ -11,7 +11,7 @@ export default function RealizadoresSection() {
   return (
     <div className="flex flex-col w-full p-5 md:pl-24">
       <div>
-        <h2 className="pb-10 font-medium text-md leading-tight">
+        <h2 className="pb-5 font-medium text-sm leading-tight">
           Criação original:
         </h2>
         <div className="flex items-center">
@@ -29,8 +29,8 @@ export default function RealizadoresSection() {
         </div>
       </div>
       <div>
-        <h2 className="pt-20 pb-10 font-medium text-md leading-tight">
-          Organizações parceiras
+        <h2 className="pt-10 pb-5 font-medium text-sm leading-tight">
+          Organizações parceiras:
         </h2>
         <div className="flex flex-wrap items-center gap-5">
           <div>
@@ -61,7 +61,7 @@ export default function RealizadoresSection() {
         </div>
       </div>
       <div>
-        <h2 className="pt-20 pb-10 font-medium text-md leading-tight">
+        <h2 className="pt-10 pb-10 font-medium text-sm leading-tight">
           Operação:{" "}
           <span className="font-regular text-sm">
             Latimpacto, Impact Hub Manaus, Governo de Nuevo León (México)

@@ -25,7 +25,7 @@ export default function FormSection() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <span className="pt-4.5 pb-4.5 pl-8 pr-8 rounded-full font-medium bg-custom-purple text-title">
+          <span className="pt-4 pb-4 pl-8 pr-8 rounded-full font-medium bg-custom-purple text-tag">
             Materiais
           </span>
         </motion.div>
@@ -36,12 +36,12 @@ export default function FormSection() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <h2 className="hidden md:block pt-20 pb-10 font-medium text-title leading-tight">
+          <h2 className="hidden md:flex pt-10 md:pt-20 pb-10 font-medium text-title leading-tight">
             Preencha o <br />
             formulário e baixe
             <br /> a nova publicação
           </h2>
-          <h2 className="md:hidden lg:hidden pt-20 pb-10 font-medium text-title leading-tight">
+          <h2 className="md:hidden lg:hidden pt-10 pb-10 font-medium text-title leading-tight">
             Preencha o formulário e baixe a nova publicação
           </h2>
           <div className="flex flex-col gap-"></div>
@@ -53,7 +53,7 @@ export default function FormSection() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true }}
-        className="bg-custom-purple w-full md:w-[50%] p-5 md:p-16 rounded-tl-lg rounded-bl-lg"
+        className="bg-custom-purple w-full md:w-[50%] p-5 md:p-14 rounded-tl-lg rounded-bl-lg"
       >
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

@@ -25,16 +25,23 @@ export default function Hero() {
           className="flex flex-col gap-5"
         >
           <p className="text-sm">
-            <span className="font-medium">O Modelo C é mais do que uma ferramenta</span> — é um caminho para
-            fortalecer negócios de impacto socioambiental que transformam o mundo
-            sem abrir mão da viabilidade econômica. Na versão 2.0, ele evolui
-            sem perder sua essência: integrar de forma coerente impacto social e
-            ambiental com lógica comercial e financeira.
+            <span className="font-medium">
+              O Modelo C é mais do que uma ferramenta
+            </span>{" "}
+            — é um caminho para fortalecer negócios de impacto socioambiental
+            que transformam o mundo sem abrir mão da viabilidade econômica. Na
+            versão 2.0, ele evolui sem perder sua essência: integrar de forma
+            coerente impacto social e ambiental com lógica comercial e
+            financeira.
           </p>
           <p>
-            <span className="font-medium">A letra C continua a representar o que faz do Modelo C um diferencial</span>: 
-            Completo, Colaborativo, Conectado à Complexidade e Compreensível. Um modelo para negócios que querem 
-            crescer com propósito e gerar mudanças relevantes.
+            <span className="font-medium">
+              A letra C continua a representar o que faz do Modelo C um
+              diferencial
+            </span>
+            : Completo, Colaborativo, Conectado à Complexidade e Compreensível.
+            Um modelo para negócios que querem crescer com propósito e gerar
+            mudanças relevantes.
           </p>
         </motion.div>
       </motion.div>
@@ -44,7 +51,7 @@ export default function Hero() {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
-        className="flex items-center justify-end w-full md:w-[50%] lg:w-[50%]"
+        className="flex items-center justify-end w-full pt-16 md:pt-0 md:w-[50%] lg:w-[50%]"
       >
         <Image src={heroBalance} alt="balance" width={550} quality={100} />
       </motion.div>

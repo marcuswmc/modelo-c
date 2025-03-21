@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div>
-      <div className="w-full pl-24 pr-24 pt-8 pb-8 justify-between items-center hidden md:flex lg:flex bg-custom-yellow">
+      <div className="w-full pl-24 pr-24 pt-14 pb-8 justify-between items-center border-t border-black hidden md:flex lg:flex bg-custom-yellow">
         <div>
           <Image src={logo} alt="Modelo C 2.0" />
         </div>
@@ -22,7 +22,7 @@ export default function Footer() {
               src={licenseLogo}
               alt="grupo O boticario"
               quality={100}
-              width={120}
+              width={110}
             />
           </div>
         <Link href={"https://creativecommons.org/licenses/by-sa/4.0/"}>

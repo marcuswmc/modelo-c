@@ -19,7 +19,7 @@ export default function PartidaSection() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <span className="pt-4.5 pb-4.5 pl-8 pr-8 rounded-full font-medium bg-custom-green text-[30px] md:text-title">
+        <span className="pt-4.5 pb-4.5 pl-8 pr-8 rounded-full font-medium bg-custom-green text-tag">
           Pontos de Partida
         </span>
       </motion.div>

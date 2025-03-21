@@ -46,10 +46,6 @@
 
 @theme inline {
 
-  /* --breakpoint-*: initial;
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px; */
-
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-regular: var(--font-rl);
@@ -62,6 +58,7 @@
 
   --text-sm: 16px;
   --text-md: 18px;
+  --text-tag: 32px;
   --text-title: 48px;
   --text-lg: 62px;
   --color-sidebar-ring: var(--sidebar-ring);
