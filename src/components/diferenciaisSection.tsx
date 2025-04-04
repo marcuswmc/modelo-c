@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import icon from "../icons/bullet-icon.svg";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import Link from "next/link";
 import { Download } from "lucide-react";
 
@@ -83,7 +82,7 @@ export default function DiferenciaisSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
           viewport={{ once: true }}
-          className="md:pt-10 md:pb-10 text-title leading-tight"
+          className="md:pt-10 md:pb-10 text-[38px] md:text-title leading-tight"
         >
           Quer conhecer a{" "}
           <span className="font-medium">
