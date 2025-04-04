@@ -26,7 +26,7 @@ export default function FormSection() {
           viewport={{ once: true }}
         >
           <span className="pt-4 pb-4 pl-8 pr-8 rounded-full font-medium bg-custom-purple text-tag">
-            Materiais
+          Guia Modelo C 2.0
           </span>
         </motion.div>
 
@@ -37,12 +37,10 @@ export default function FormSection() {
           viewport={{ once: true }}
         >
           <h2 className="hidden md:flex pt-10 md:pt-20 pb-10 font-medium text-title leading-tight">
-            Preencha o <br />
-            formulário e baixe
-            <br /> a nova publicação
+          Acesse e experimente <br/>a nova versão do Modelo C!
           </h2>
           <h2 className="md:hidden lg:hidden pt-10 pb-10 font-medium text-title leading-tight">
-            Preencha o formulário e baixe a nova publicação
+          Acesse e experimente a nova versão do Modelo C!
           </h2>
           <div className="flex flex-col gap-"></div>
         </motion.div>
@@ -62,9 +60,9 @@ export default function FormSection() {
           viewport={{ once: true }}
           className="hidden md:block md:pt-10 md:pb-10 text-title text-white leading-tight"
         >
-          Integre estratégia e <br />
-          <span className="font-medium">impacto social</span> <br />
-          de forma completa!
+          Preencha o <br />
+            formulário e baixe
+            <br /> a nova publicação
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -74,6 +72,8 @@ export default function FormSection() {
         >
           <DownloadForm />
         </motion.div>
+
+        
       </motion.div>
     </motion.div>
   );

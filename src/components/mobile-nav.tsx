@@ -11,6 +11,7 @@ import logo from "@/logos/logo-modelo-c-header.svg"
 const links = [
   { name: "Início", path: "#inicio" },
   { name: "Manifesto", path: "#manifesto" },
+  { name: "Pontos de Partida", path: "#partida" },
   { name: "Modelo C 2.0", path: "#modeloc" },
   { name: "Realizadores", path: "#realizadores" },
 ];

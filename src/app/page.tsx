@@ -1,3 +1,4 @@
+import DiferenciaisSection from "@/components/diferenciaisSection";
 import FormSection from "@/components/formSection";
 import Hero from "@/components/hero";
 import ManifestoSection from "@/components/manifesto-section";
@@ -14,11 +15,14 @@ export default function Home() {
         <div id="manifesto" className="scroll-mt-24">
           <ManifestoSection />
         </div>
-        <div>
+        <div id="partida">
           <PartidaFunction />
         </div>
         <div id="modeloc" className="scroll-mt-24">
           <FormSection />
+        </div>
+        <div id="diferenciais" className="scroll-mt-24">
+          <DiferenciaisSection />
         </div>
         <div id="realizadores" className="scroll-mt-24">
           <RealizadoresSection />

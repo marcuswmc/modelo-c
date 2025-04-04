@@ -6,8 +6,9 @@ import Link from "next/link";
 const links = [
   { name: "Início", path: "#inicio" },
   { name: "Manifesto", path: "#manifesto" },
-  { name: "Modelo C 2.0", path: "#modeloc" },
-  { name: "Realizadores", path: "#realizadores" },
+  { name: "Pontos de Partida", path: "#partida" },
+  { name: "Guia Modelo C 2.0", path: "#modeloc" },
+  { name: "Realização", path: "#realizadores" },
 ];
 
 export default function DesktopNav() {

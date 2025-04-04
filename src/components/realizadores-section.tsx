@@ -6,13 +6,20 @@ import fundoValeLogo from "@/logos/fundo-vale-logo.png";
 import amazLogo from "@/logos/amaz-logo.png";
 import sabinLogo from "@/logos/sabin_logo.png";
 import iceLogo from "@/logos/ice-logo.jpeg";
+import Link from "next/link";
+
 
 export default function RealizadoresSection() {
   return (
-    <div className="flex flex-col w-full p-5 md:pl-24">
+    <div className="flex flex-col w-full p-5 md:pl-24 gap-6">
+      <div className="pb-10 md:pb-20">
+        <span className="pt-4 pb-4 pl-8 pr-8 rounded-full font-medium bg-custom-green text-tag">
+          Realização
+        </span>
+      </div>
       <div>
         <h2 className="pb-5 font-medium text-sm leading-tight">
-          Criação original:
+        O Modelo C é uma realização de:
         </h2>
         <div className="flex items-center">
           <div>
@@ -29,8 +36,18 @@ export default function RealizadoresSection() {
         </div>
       </div>
       <div>
-        <h2 className="pt-10 pb-5 font-medium text-sm leading-tight">
-          Organizações parceiras:
+        <h2 className="pb-5 font-medium text-sm leading-tight">
+        Coordenação da versão 2.0:
+        </h2>
+        <div className="flex items-center">
+          <div>
+            <Image src={moveLogo} alt="Move Social" quality={100} width={100} />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 className="pb-5 font-medium text-sm leading-tight">
+          Patrocínio:
         </h2>
         <div className="flex flex-wrap items-center gap-5">
           <div>
@@ -61,12 +78,17 @@ export default function RealizadoresSection() {
         </div>
       </div>
       <div>
-        <h2 className="pt-10 pb-10 font-medium text-sm leading-tight">
+        <h2 className=" pb-10 font-medium text-sm leading-tight">
           Operação:{" "}
           <span className="font-regular text-sm">
             Latimpacto, Impact Hub Manaus, Governo de Nuevo León (México)
           </span>
         </h2>
+      </div>
+      <div>
+        <h3 className=" pb-10 text-[14px] leading-tight">
+        *Outras organizações e pessoas contribuíram para a construção das versões do Modelo C,<br/> mais informações podem ser encontradas na <Link href={"#modeloc"} className="font-medium">Ficha Técnica do Guia Modelo C 2.0.</Link>
+        </h3>
       </div>
     </div>
   );

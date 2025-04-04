@@ -58,7 +58,6 @@ export default function DownloadForm() {
     <div className="w-full md:w-[490px] bg-white p-6 rounded-lg shadow-md">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-          {/* Campo Nome */}
           <FormField
             control={form.control}
             name="name"
@@ -72,8 +71,6 @@ export default function DownloadForm() {
               </FormItem>
             )}
           />
-
-          {/* Campo Email */}
           <FormField
             control={form.control}
             name="email"
@@ -92,8 +89,6 @@ export default function DownloadForm() {
               </FormItem>
             )}
           />
-
-          {/* Campo Empresa (Opcional) */}
           <FormField
             control={form.control}
             name="company"
@@ -121,6 +116,10 @@ export default function DownloadForm() {
             {isSubmitting ? "Aguarde..." : "Continuar"}
           </Button>
         </form>
+
+        <div className="mt-6">
+          <p className="text-[12px]">*Seus dados serão utilizados apenas para monitoramento da publicação. Ao preencher este formulário, você também autoriza o recebimento de novidades exclusivamente relacionadas ao Modelo C.</p>
+        </div>
       </Form>
     </div>
   );
