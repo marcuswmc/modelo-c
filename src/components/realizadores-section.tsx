@@ -77,14 +77,14 @@ export default function RealizadoresSection() {
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <h2 className=" pb-10 font-medium text-sm leading-tight">
           Operação:{" "}
           <span className="font-regular text-sm">
             Latimpacto, Impact Hub Manaus, Governo de Nuevo León (México)
           </span>
         </h2>
-      </div>
+      </div> */}
       <div>
         <h3 className=" pb-10 text-[14px] leading-tight">
         *Outras organizações e pessoas contribuíram para a construção das versões do Modelo C,<br/> mais informações podem ser encontradas na <Link href={"#modeloc"} className="font-medium">Ficha Técnica do Guia Modelo C 2.0.</Link>
