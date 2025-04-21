@@ -100,12 +100,11 @@ export default function DiferenciaisSection() {
         >
           <div className="flex items-start mt-4">
             <Link
-              href="https://www.cmodel.co/"
+              href="/guia-modelo-c-original.pdf"
               target="_blank"
-              rel="noopener noreferrer"
               className="flex gap-2 bg-custom-purple pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium text-sm cursor-pointer"
             >
-              Baixe o modelo c original aqui
+              Baixe o Modelo C original aqui
               <Download size={16} />
             </Link>
           </div>
