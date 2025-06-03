@@ -26,5 +26,69 @@
     "f-paragraph": "é um caminho para fortalecer negócios de impacto socioambiental que transformam o mundo sem abrir mão da viabilidade econômica. Na versão 2.0, ele evolui sem perder sua essência: integrar de forma coerente impacto social e ambiental com lógica comercial e financeira.",
     "s-highlight": "A letra C continua a representar o que faz do Modelo C um diferencial: ",
     "s-paragraph": "Completo, Colaborativo, Conectado à Complexidade e Compreensível. Um modelo para negócios que querem crescer com propósito e gerar mudanças relevantes."
+  },
+  "manifest": {
+    "tag": "Manifesto",
+    "title": "A integração crítica precisa ganhar terreno",
+    "paragraphs": [
+      "Precisamos avançar em práticas e reflexões integrativas que, de forma crítica e responsável, favoreçam um enfrentamento mais efetivo das desigualdades, injustiças sociais e dos desafios ambientais complexos. Há tempos testemunhamos os efeitos negativos da predominância de uma perspectiva de modernidade que fragmenta, isola e desconecta partes de um todo - seja no nível individual, social ou ambiental.",
+      "Vemos isso em ideias e produções voltadas para soluções temporárias ou interesses particulares; em ações e decisões que ignoram as conexões profundas entre elementos, seres e biomas em toda sua diversidade; histórias contadas por apenas uma voz, desconexas de tantas outras que compõem de modo imbricado um mesmo momento e realidade temporal; em teorias e modelos isolados, rigidamente presos às suas próprias certezas - e em tantos outros fenômenos que reforçam essa lógica fragmentada.",
+      "Diante desse cenário, temos duas escolhas: aceitar e reproduzir essas estruturas ou buscar rupturas, novas perspectivas e mudanças que promovam mais consciência, integração, justiça e equidade. Precisamos de mais agentes sistêmicos de transformação, atuando com maturidade e comprometidos com impactos positivos. Para isso, necessitamos de modelos (e antimodelos) que ampliem nosso repertório de ação.",
+      "Este material reitera a nossa intenção de seguir contribuindo para o campo de impacto socioambiental, para as organizações e para as pessoas do ecossistema! Assim, as convidamos a explorar o Modelo C, a refletir, construir e se comprometer com um olhar mais integrado e sistêmico, que reconheça a complexidade e a interdependência entre impacto e negócio, pessoas e territórios, presente e futuro. Que esse seja um instrumento vivo, capaz de estimular novas perguntas, fortalecer caminhos e impulsionar transformações que sejam, de fato, relevantes para o mundo que queremos construir."
+    ]
+  },
+  "partida": {
+    "tag": "Pontos de Partida",
+    "left-title": "Para quê serve?",
+    "right-title": "Para quem é?",
+    "left-paragraphs": [
+      "Para apoiar o diagnóstico, a criação e gestão de negócios que buscam integrar efetivamente seu modelo de operação produtiva e comercial com a lógica de geração de impacto socioambiental positivo.",
+      "Para que negócios de impacto amadureçam, se tornando mais capazes de alcançar seus planos e ambições com fluxos financeiros e equipes saudáveis.",
+      "Para problematizar, provocar e inquietar empreendedores(as) e equipes sobre a forma como concebem e gerenciam os negócios em que estão inseridos.",
+      "Para alinhar times e parceiros de negócios de impacto ao redor de seu propósito e modelo de operação produtiva e comercial.",
+      "Para criar possibilidades de uma comunicação mais compreensível entre o negócio e seus diferentes públicos de interesse."
+    ],
+    "right-paragraphs": [
+      "Quem deseja criar ou lidera e opera um negócio de impacto - empreendedores/as e equipes.",
+      "Quem busca reinventar sua organização - organizações em transição para a lógica de negócio de impacto.",
+      "Quem assessora e apoia o amadurecimento de negócios de impacto - aceleradoras, incubadoras e outras intermediárias.",
+      "Quem financia negócios de impacto - investidores de impacto, fundos, entre outros.",
+      "Quem ensina a temática - docentes de instituições de ensino, mentores(as) e outras.",
+      "Qualquer pessoa interessada na temática de gestão de impacto."
+    ]
+  },
+  "modeloc": {
+    "tag": "Guia Modelo C 2.0",
+    "title": "Acesse e experimente a nova versão do Modelo C!",
+    "frame-description": {
+      "hightlight": "Frame Modelo C",
+      "paragraph": "para impressão"
+    },
+    "frame-impress": {
+      "href": "/frame-impressao-pt.pdf",
+      "thumb": "/thumb-frame.png",
+      "alt": "Frame para impressão modelo c"
+    },
+    "form-title": "Preencha o formulário e baixe a nova publicação",
+    "form": {
+      "name": {
+        "label": "Nome Completo",
+        "placeholder": "Seu nome completo"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "Seu e-mail"
+      },
+      "company": {
+        "label": "Organização (Opcional)",
+        "placeholder": "Nome da Organização"
+      },
+      "submit": {
+        "text": "Continuar",
+        "submitting": "Aguarde..."
+      }
+    },
+    "guia-pdf-url": "/guia_modelo_c.pdf"
+
   }
 }

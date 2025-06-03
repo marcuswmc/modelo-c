@@ -4,22 +4,30 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 import { useTranslations } from "next-intl";
-
+import LocaleSwitcher from "./localeSwitcher";
 
 export default function DesktopNav() {
   const [activeSection, setActiveSection] = useState("");
-  
-  const t = useTranslations('navLinks')
-  const linkKeys = ["home", "manifest", "startingPoints", "cmodelGuide", "partners"];
 
-  const navLinks = linkKeys.map((key) =>({
+  const t = useTranslations("navLinks");
+  const linkKeys = [
+    "home",
+    "manifest",
+    "startingPoints",
+    "cmodelGuide",
+    "partners",
+  ];
+
+  const navLinks = linkKeys.map((key) => ({
     key,
     name: t(`${key}.name`),
-    path: t(`${key}.path`)
-  }))
+    path: t(`${key}.path`),
+  }));
 
-
-  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
+  const handleScroll = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    targetId: string
+  ) => {
     event.preventDefault();
     const section = document.querySelector(targetId);
     if (section) {
@@ -35,10 +43,14 @@ export default function DesktopNav() {
         if (path.startsWith("#")) {
           const section = document.querySelector(path);
           if (section) {
-            const offsetTop = section.getBoundingClientRect().top + window.scrollY;
+            const offsetTop =
+              section.getBoundingClientRect().top + window.scrollY;
             const offsetBottom = offsetTop + section.clientHeight;
-            
-            if (scrollPosition >= offsetTop - 200 && scrollPosition < offsetBottom - 10) {
+
+            if (
+              scrollPosition >= offsetTop - 200 &&
+              scrollPosition < offsetBottom - 10
+            ) {
               setActiveSection(path);
             }
           }
@@ -52,7 +64,7 @@ export default function DesktopNav() {
 
   return (
     <nav className="flex gap-8">
-      {navLinks.map(({key, name, path}) => (
+      {navLinks.map(({ key, name, path }) => (
         <Link
           href={path}
           key={key}
@@ -61,11 +73,15 @@ export default function DesktopNav() {
             activeSection === path
               ? "bg-custom-purple border-custom-purple text-white"
               : "border-black text-black"
-          } pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium text-sm cursor-pointer transition-colors`}
+          } flex flex-col justify-center pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium text-[14px] cursor-pointer transition-colors`}
         >
           {name}
         </Link>
       ))}
+
+      <div>
+        <LocaleSwitcher />
+      </div>
     </nav>
   );
 }

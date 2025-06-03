@@ -2,6 +2,7 @@ import logo from "@/logos/logo-modelo-c-header.svg"
 import Image from "next/image"
 import DesktopNav from "./desktop-nav"
 import MobileNav from "./mobile-nav"
+import MobileLocaleSwitcher from "./mobileLocaleSwitcher"
 
 
 
@@ -14,7 +15,10 @@ export default function Header() {
       <div className="hidden md:flex lg:flex">
         <DesktopNav />
       </div>
-      <div className="md:hidden">
+      <div className="md:hidden flex gap-4">
+        <div>
+            <MobileLocaleSwitcher/>
+          </div>
         <MobileNav />
       </div>
     </div>
