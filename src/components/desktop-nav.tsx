@@ -3,16 +3,21 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const links = [
-  { name: "Início", path: "#inicio" },
-  { name: "Manifesto", path: "#manifesto" },
-  { name: "Pontos de Partida", path: "#partida" },
-  { name: "Guia Modelo C 2.0", path: "#modeloc" },
-  { name: "Realização", path: "#realizadores" },
-];
+import { useTranslations } from "next-intl";
+
 
 export default function DesktopNav() {
   const [activeSection, setActiveSection] = useState("");
+  
+  const t = useTranslations('navLinks')
+  const linkKeys = ["home", "manifest", "startingPoints", "cmodelGuide", "partners"];
+
+  const navLinks = linkKeys.map((key) =>({
+    key,
+    name: t(`${key}.name`),
+    path: t(`${key}.path`)
+  }))
+
 
   const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
     event.preventDefault();
@@ -26,7 +31,7 @@ export default function DesktopNav() {
     const handleScrollSpy = () => {
       const scrollPosition = window.scrollY;
 
-      links.forEach(({ path }) => {
+      navLinks.forEach(({ path }) => {
         if (path.startsWith("#")) {
           const section = document.querySelector(path);
           if (section) {
@@ -47,18 +52,18 @@ export default function DesktopNav() {
 
   return (
     <nav className="flex gap-8">
-      {links.map((link, index) => (
+      {navLinks.map(({key, name, path}) => (
         <Link
-          href={link.path}
-          key={index}
-          onClick={(event) => handleScroll(event, link.path)}
+          href={path}
+          key={key}
+          onClick={(event) => handleScroll(event, path)}
           className={`${
-            activeSection === link.path
+            activeSection === path
               ? "bg-custom-purple border-custom-purple text-white"
               : "border-black text-black"
           } pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium text-sm cursor-pointer transition-colors`}
         >
-          {link.name}
+          {name}
         </Link>
       ))}
     </nav>

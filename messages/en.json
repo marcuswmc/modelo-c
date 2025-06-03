@@ -1,0 +1,31 @@
+{
+  
+    "navLinks": {
+    "home": {
+      "name": "Home",
+      "path": "#inicio"
+    },
+    "manifest": {
+      "name": "Manifest",
+      "path": "#manifesto"
+    },
+    "startingPoints": {
+      "name": "Starting points",
+      "path": "#partida"
+    },
+    "cmodelGuide": {
+      "name": "Model C 2.0 Guide",
+      "path": "#modeloc"
+    },
+    "partners": {
+      "name": "Project Partners",
+      "path": "#realizadores"
+    }
+  },
+  "hero": { 
+    "f-highlight": "Model C is more than a tool - ",
+    "f-paragraph": "it is a way of strengthening social and environmental impact businesses that transform the world while maintaining economic viability. In version 2.0, it has evolved without losing its essence: that of coherently integrating social and environmental impact with commercial and financial logic.",
+    "s-highlight": "The letter C continues to represent what makes Model C different: ",
+    "s-paragraph": " Complete, Collaborative, Connected to Complexity and Comprehensible. A model for businesses that want to grow with purpose and generate relevant change."
+  }
+}

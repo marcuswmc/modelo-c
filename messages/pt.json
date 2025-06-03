@@ -1,0 +1,30 @@
+{
+  "navLinks": {
+    "home": {
+      "name": "Início",
+      "path": "#inicio"
+    },
+    "manifest": {
+      "name": "Manifesto",
+      "path": "#manifesto"
+    },
+    "startingPoints": {
+      "name": "Pontos de Partida",
+      "path": "#partida"
+    },
+    "cmodelGuide": {
+      "name": "Guia Modelo C 2.0",
+      "path": "#modeloc"
+    },
+    "partners": {
+      "name": "Realização",
+      "path": "#realizadores"
+    }
+  },
+  "hero": {
+    "f-highlight": "O Modelo C é mais do que uma ferramenta - ",
+    "f-paragraph": "é um caminho para fortalecer negócios de impacto socioambiental que transformam o mundo sem abrir mão da viabilidade econômica. Na versão 2.0, ele evolui sem perder sua essência: integrar de forma coerente impacto social e ambiental com lógica comercial e financeira.",
+    "s-highlight": "A letra C continua a representar o que faz do Modelo C um diferencial: ",
+    "s-paragraph": "Completo, Colaborativo, Conectado à Complexidade e Compreensível. Um modelo para negócios que querem crescer com propósito e gerar mudanças relevantes."
+  }
+}
