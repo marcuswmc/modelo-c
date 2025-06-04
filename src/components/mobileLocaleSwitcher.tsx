@@ -83,7 +83,6 @@ export default function MobileLocaleSwitcher() {
                   <span className="text-2xl">{flag}</span>
                   <div className="flex-1">
                     <div className="font-medium">{name}</div>
-                    <div className="text-sm text-gray-500">{label}</div>
                   </div>
                   {code === currentLocale.code && (
                     <div className="w-6 h-6 rounded-full bg-custom-purple flex items-center justify-center">
