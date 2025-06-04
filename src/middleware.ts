@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
 
@@ -9,8 +9,11 @@ export default function middleware(request: NextRequest) {
 
   if (hostname && hostname.includes('cmodel.co')) {
     const url = request.nextUrl.clone();
-    url.locale = 'en';
-    return NextResponse.redirect(url);
+
+    if (!url.pathname.startsWith('/en')) {
+      url.pathname = `/en${url.pathname}`;
+      return Response.redirect(url, 307);
+    }
   }
 
   return intlMiddleware(request);
