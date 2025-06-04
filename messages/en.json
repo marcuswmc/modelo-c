@@ -1,6 +1,5 @@
 {
-  
-    "navLinks": {
+  "navLinks": {
     "home": {
       "name": "Home",
       "path": "#inicio"
@@ -22,7 +21,7 @@
       "path": "#realizadores"
     }
   },
-  "hero": { 
+  "hero": {
     "f-highlight": "Model C is more than a tool - ",
     "f-paragraph": "it is a way of strengthening social and environmental impact businesses that transform the world while maintaining economic viability. In version 2.0, it has evolved without losing its essence: that of coherently integrating social and environmental impact with commercial and financial logic.",
     "s-highlight": "The letter C continues to represent what makes Model C different: ",
@@ -57,6 +56,75 @@
       "For those who teach the subject: teachers from educational institutions, mentors, and others.",
       "For anyone interested in impact management."
     ]
+  },
+  "modeloc": {
+    "tag": "Model C 2.0 Guide",
+    "title": "Access and try the latest version of Model C!",
+    "frame-description": {
+      "highlight": "Model C 2.0 ",
+      "paragraph": "for printing"
+    },
+    "frame-impress": {
+      "href": "/frame-impressao-pt.pdf",
+      "thumb": "/thumb-frame.png",
+      "alt": "Modelo C printable frame"
+    },
+    "form-title": "Fill in the form and download the new publication.",
+    "form": {
+      "name": {
+        "label": "Full name",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "Your email"
+      },
+      "company": {
+        "label": "Organization (optional)",
+        "placeholder": "Organization name"
+      },
+      "submit": {
+        "text": "Continue",
+        "submitting": "Preparing..."
+      },
+      "lgpd": "Your data will only be used to monitor the publication. By filling in this form, you also authorize us to receive news exclusively related to Model C."
+    },
+    "guia-pdf-url": "/guia_modelo_c.pdf"
+  },
+  "features": {
+    "tag": "Features",
+    "left-title": {
+      "first": "The main distinguishing",
+      "second": "features of Model C 2.0 are "
+    },
+    "feature-list": [
+      "Update of terms and concepts",
+      "New guiding image",
+      "Greater power in integrating dimensions",
+      "New transversal layers for impact business modelling",
+      "More support resources to facilitate building and unfolding",
+      "A broader perspective focused on strategic management."
+    ],
+    "right-title": {
+      "first": "Want to explore the",
+      "second": "original version of",
+      "third": "Model C",
+      "fourth": ", widely used by",
+      "fifth": "impact businesses",
+      "last": "in Brazil?"
+    },
+    "download-btn": "Get the original Model C Guide here",
+    "original-pdf-url": "/guia-modelo-c-original.pdf"
+  },
+  "partners-section":{
+    "tag": "Project Partners",
+    "creation": "Original creation",
+    "coordination":"Coordination of version 2.0",
+    "sponsorship": "Sponsorship",
+    "partners-footer": {
+      "first": "Other organizations and individuals have contributed to the construction of Model C versions,",
+      "second": "more information may be found in",
+      "third": "the Model C 2.0 Guide."
+    }
   }
-
 }

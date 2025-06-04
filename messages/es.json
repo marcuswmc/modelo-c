@@ -56,5 +56,76 @@
       "Quien enseña el tema: profesores en instituciones educativas, mentores, entre otros.",
       "Cualquier persona interesada en la gestión de impacto."
     ]
+  },
+    "modeloc": {
+    "tag": "Guia Modelo C 2.0",
+    "title": "¡Acceda y pruebe la nueva versión del Modelo C!",
+    "frame-description": {
+      "highlight": "Modelo C 2.0",
+      "paragraph": "para impresión"
+    },
+    "frame-impress": {
+      "href": "/frame-impressao-pt.pdf",
+      "thumb": "/thumb-frame.png",
+      "alt": "Frame para impressão modelo c"
+    },
+    "form-title": "Complete el formulario y descargue la nueva publicación.",
+    "form": {
+      "name": {
+        "label": "Nombre completo",
+        "placeholder": " Su nombre completo"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "Su correo"
+      },
+      "company": {
+        "label": "Organización (opcional)",
+        "placeholder": "Nombre de la Organización"
+      },
+      "submit": {
+        "text": "Continuar",
+        "submitting": "Preparando..."
+      },
+      "lgpd": "Sus datos serán utilizados únicamente para el monitoreamiento de la publicación. Al completar este formulario, también nos autoriza a enviar noticias relacionadas exclusivamente con el Modelo C." 
+    },
+    "guia-pdf-url": "/guia_modelo_c.pdf"
+
+  },
+  "features": {
+    "tag": "Diferencias",
+    "left-title": {
+      "first": "Las principales diferencias",
+      "second": "del Modelo C 2.0 son"
+    },
+    "feature-list": [
+      "Actualización de términos y conceptos",
+      "Nueva imagen orientadora",
+      "Mayor potencia en la integración de dimensiones",
+      "Nuevas camadas transversales para modelar negocios de impacto",
+      "Más recursos de apoyo para facilitar construcciones y despliegues",
+      "Una mirada más amplia a la gestión estratégica"
+    ],
+    "right-title": {
+      "first": "Quieres conocer la",
+      "second": "versión original del",
+      "third": "Modelo C",
+      "fourth": ", ampliamente utilizada por",
+      "fifth": "negocios de impacto",
+      "last": "en Brasil?"
+    },
+    "download-btn": "Descargue el Modelo C original aquí",
+    "original-pdf-url": "/guia-modelo-c-original.pdf"
+  },
+   "partners-section":{
+    "tag": "Realización",
+    "creation": "El modelo C es una realización de",
+    "coordination":"Coordinación de la versión 2.0",
+    "sponsorship": "Patrocinio",
+    "partners-footer": {
+      "first": "Otras organizaciones y personas contribuyeron con la construcción de las versiones del Modelo C,",
+      "second": "más informaciones pueden ser encontradas en",
+      "third": "la Ficha Técnica de la Guía del Modelo C 2.0."
+    }
   }
 }

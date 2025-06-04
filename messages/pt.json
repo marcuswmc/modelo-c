@@ -61,7 +61,7 @@
     "tag": "Guia Modelo C 2.0",
     "title": "Acesse e experimente a nova versão do Modelo C!",
     "frame-description": {
-      "hightlight": "Frame Modelo C",
+      "highlight": "Frame Modelo C",
       "paragraph": "para impressão"
     },
     "frame-impress": {
@@ -69,7 +69,7 @@
       "thumb": "/thumb-frame.png",
       "alt": "Frame para impressão modelo c"
     },
-    "form-title": "Preencha o formulário e baixe a nova publicação",
+    "form-title": "Preencha o formulário e baixe a nova publicação.",
     "form": {
       "name": {
         "label": "Nome Completo",
@@ -86,9 +86,45 @@
       "submit": {
         "text": "Continuar",
         "submitting": "Aguarde..."
-      }
+      },
+      "lgpd": "Seus dados serão utilizados apenas para monitoramento da publicação. Ao preencher este formulário, você também autoriza o recebimento de novidades exclusivamente relacionadas ao Modelo C."
     },
     "guia-pdf-url": "/guia_modelo_c.pdf"
-
+  },
+  "features": {
+    "tag": "Diferenciais",
+    "left-title": {
+      "first": "Os principais diferenciais",
+      "second": "do Modelo C 2.0 são"
+    },
+    "feature-list": [
+      "Atualização de termos e conceitos",
+      "Nova imagem orientadora",
+      "Maior potência na integração de dimensões",
+      "Novas camadas transversais para a modelagem de negócios de impacto",
+      "Mais recursos de apoio para facilitar construções e desdobramentos",
+      "Ampliação do olhar para a gestão estratégica"
+    ],
+    "right-title": {
+      "first": "Quer conhecer a",
+      "second": "versão original do",
+      "third": "Modelo C",
+      "fourth": ", altamente utilizada por",
+      "fifth": "negócios de impacto",
+      "last": "no Brasil?"
+    },
+    "download-btn": "Baixe o Modelo C original aqui",
+    "original-pdf-url": "/guia-modelo-c-original.pdf"
+  },
+  "partners-section":{
+    "tag": "Realização",
+    "creation": "O Modelo C é uma realização de",
+    "coordination":"Coordenação da versão 2.0",
+    "sponsorship": "Patrocínio",
+    "partners-footer": {
+      "first": "Outras organizações e pessoas contribuíram para a construção das versões do Modelo C,",
+      "second": "mais informações podem ser encontradas na",
+      "third": "Ficha Técnica do Guia Modelo C 2.0."
+    }
   }
 }

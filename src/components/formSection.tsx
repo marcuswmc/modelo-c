@@ -45,7 +45,7 @@ export default function FormSection() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <h2 className="hidden md:flex pt-10 md:pt-20 pb-10 font-medium text-title leading-tight">
+          <h2 className="hidden md:flex pt-10 md:pt-20 pb-10 font-medium text-title leading-tight w-9/10">
             {t('title')}
           </h2>
           <h2 className="md:hidden lg:hidden pt-10 pb-10 font-medium text-title leading-tight">
@@ -68,7 +68,7 @@ export default function FormSection() {
 
             <div className="flex gap-2 items-center">
               <p className="text-gray-600">
-                <span className="font-medium">{t('frame-description.hightlight')}</span> {t('frame-description.paragraph')}
+                <span className="font-medium">{t('frame-description.highlight')}</span> {t('frame-description.paragraph')}
               </p>
               <DownloadIcon size={18} />
             </div>
@@ -104,7 +104,7 @@ export default function FormSection() {
       <div className="flex md:hidden flex-col gap-5 items-center mt-20">
         <div className="flex gap-2 items-center">
           <p className="text-gray-600 text-xl">
-            <span className="font-medium text-2xl">{t('frame-description.hightlight')}</span> {t('frame-description.paragraph')}
+            <span className="font-medium text-2xl">{t('frame-description.highlight')}</span> {t('frame-description.paragraph')}
           </p>
           <DownloadIcon size={18} />
         </div>

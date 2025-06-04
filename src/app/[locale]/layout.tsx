@@ -46,6 +46,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body
         className={`${regularFont.variable} ${mediumFont.variable} antialiased`}
+        suppressHydrationWarning
       >
         <NextIntlClientProvider>
         <Header />
