@@ -37,7 +37,7 @@ export default function Footer() {
         </Link>
       </div>
       <div className="py-1 bg-black/90 flex items-center justify-center">
-        <Link href={"https://www.instagram.com/modeloc2/"} className=" flex justify-center items-center gap-1">
+        <Link href={"https://marcusdev.me/"} className=" flex justify-center items-center gap-1">
         <p className="text-white text-[12px] font-light leading-tight tracking-wide">
           Developed by
         </p>

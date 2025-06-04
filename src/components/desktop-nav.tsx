@@ -63,7 +63,7 @@ export default function DesktopNav() {
   }, []);
 
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-6">
       {navLinks.map(({ key, name, path }) => (
         <Link
           href={path}
@@ -73,7 +73,7 @@ export default function DesktopNav() {
             activeSection === path
               ? "bg-custom-purple border-custom-purple text-white"
               : "border-black text-black"
-          } flex flex-col justify-center pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium text-[14px] cursor-pointer transition-colors`}
+          } flex flex-col justify-center pt-1 pb-1 pl-5 pr-5 rounded-full border font-medium text-[14px] cursor-pointer transition-colors`}
         >
           {name}
         </Link>
