@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -17,6 +19,8 @@ const formSchema = z.object({
 
 export default function DownloadForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const t = useTranslations('modeloc.form')
+  const tUrl = useTranslations('modeloc')
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -24,7 +28,7 @@ export default function DownloadForm() {
   });
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    const pdfUrl = "/guia_modelo_c.pdf";
+    const pdfUrl = tUrl('guia-pdf-url');
     const newTab = window.open(pdfUrl, "_blank");
 
     if (!newTab) {
@@ -63,9 +67,9 @@ export default function DownloadForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <Label htmlFor="name">Nome Completo</Label>
+                <Label htmlFor="name">{t('name.label')}</Label>
                 <FormControl>
-                  <Input id="name" placeholder="Seu nome completo" {...field} />
+                  <Input id="name" placeholder={t('name.placeholder')} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -76,12 +80,12 @@ export default function DownloadForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email">{t('email.label')}</Label>
                 <FormControl>
                   <Input
                     id="email"
                     type="email"
-                    placeholder="Seu email"
+                    placeholder={t('email.placeholder')}
                     {...field}
                   />
                 </FormControl>
@@ -94,11 +98,11 @@ export default function DownloadForm() {
             name="company"
             render={({ field }) => (
               <FormItem>
-                <Label htmlFor="company">Organização (Opcional)</Label>
+                <Label htmlFor="company">{t('company.label')}</Label>
                 <FormControl>
                   <Input
                     id="company"
-                    placeholder="Nome da Organização"
+                    placeholder={t('company.placeholder')}
                     {...field}
                   />
                 </FormControl>
@@ -110,15 +114,15 @@ export default function DownloadForm() {
           {/* Botão de Envio */}
           <Button
             type="submit"
-            className="w-full bg-custom-purple"
+            className="w-full bg-custom-purple cursor-pointer"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Aguarde..." : "Continuar"}
+            {isSubmitting ? `${t('submit.submitting')}` : `${t('submit.text')}`}
           </Button>
         </form>
 
         <div className="mt-6">
-          <p className="text-[12px]">*Seus dados serão utilizados apenas para monitoramento da publicação. Ao preencher este formulário, você também autoriza o recebimento de novidades exclusivamente relacionadas ao Modelo C.</p>
+          <p className="text-[12px]">*{t('lgpd')}</p>
         </div>
       </Form>
     </div>

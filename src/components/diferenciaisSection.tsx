@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 import { motion } from "framer-motion";
 import icon from "../icons/bullet-icon.svg";
 import Image from "next/image";
@@ -7,6 +9,7 @@ import Link from "next/link";
 import { Download } from "lucide-react";
 
 export default function DiferenciaisSection() {
+  const  t  = useTranslations("features");
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -29,7 +32,7 @@ export default function DiferenciaisSection() {
           viewport={{ once: true }}
         >
           <span className="pt-4 pb-4 pl-8 pr-8 rounded-full font-medium bg-custom-green text-tag">
-            Diferenciais
+            {t('tag')}
           </span>
         </motion.div>
 
@@ -41,18 +44,10 @@ export default function DiferenciaisSection() {
           className="w-full"
         >
           <h2 className="pt-10 pb-10 font-medium text-title md:pt-20">
-            Os principais diferenciais <br className="hidden md:block" /> do
-            Modelo C 2.0 são:
+            {t("left-title.first")} <br className="hidden md:block" /> {t("left-title.second")}:
           </h2>
           <div className="space-y-6">
-            {[
-              "Atualização de termos e conceitos",
-              "Nova imagem orientadora",
-              "Maior potência na integração de dimensões",
-              "Novas camadas transversais para a modelagem de negócios de impacto",
-              "Mais recursos de apoio para facilitar construções e desdobramentos",
-              "Ampliação do olhar para a gestão estratégica",
-            ].map((text, index) => (
+            {t.raw('feature-list').map((text: string, index: number) => (
               <motion.div
                 key={index}
                 className="flex gap-x-5 items-start"
@@ -84,13 +79,13 @@ export default function DiferenciaisSection() {
           viewport={{ once: true }}
           className="md:pt-10 md:pb-10 text-[38px] md:text-title leading-tight"
         >
-          Quer conhecer a{" "}
+          {t('right-title.first')}{" "}
           <span className="font-medium">
-            versão original do{" "}
-            <span className="text-custom-purple">Modelo C</span>
+            {t('right-title.second')}{" "}
+            <span className="text-custom-purple">{t('right-title.third')}</span>
           </span>
-          , altamente utilizada por{" "}
-          <span className="font-medium">negócios de impacto</span> no Brasil?
+          {t('right-title.fourth')}{" "}
+          <span className="font-medium">{t('right-title.fifth')}</span> {t('right-title.last')}
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -100,11 +95,11 @@ export default function DiferenciaisSection() {
         >
           <div className="flex items-start mt-4">
             <Link
-              href="/guia-modelo-c-original.pdf"
+              href={t('original-pdf-url')}
               target="_blank"
               className="flex gap-2 bg-custom-purple pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium text-sm cursor-pointer"
             >
-              Baixe o Modelo C original aqui
+              {t('download-btn')}
               <Download size={16} />
             </Link>
           </div>

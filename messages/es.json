@@ -1,0 +1,131 @@
+{
+  "navLinks": {
+    "home": {
+      "name": "Introducción",
+      "path": "#inicio"
+    },
+    "manifest": {
+      "name": "Manifiesto",
+      "path": "#manifesto"
+    },
+    "startingPoints": {
+      "name": "Puntos de Partida",
+      "path": "#partida"
+    },
+    "cmodelGuide": {
+      "name": "Guía Modelo C 2.0",
+      "path": "#modeloc"
+    },
+    "partners": {
+      "name": "Realización",
+      "path": "#realizadores"
+    }
+  },
+  "hero": {
+    "f-highlight": "El Modelo C es más que una herramienta - ",
+    "f-paragraph": "es un camino para fortalecer los negocios de impacto socioambiental que transforman el mundo sin sacrificar la viabilidad económica. En su versión 2.0, ha evolucionado sin perder su esencia: integrar de forma coherente el impacto social y ambiental con lógica comercial y financiera.",
+    "s-highlight": "La letra C sigue representando lo que hace diferente al Modelo C: ",
+    "s-paragraph": "Completo, Colaborativo, Conectado a la Complejidad y Comprensible. Un modelo para negocios que quieren crecer con propósito y generar cambios relevantes."
+  },
+  "manifest": {
+    "tag": "Manifiesto",
+    "title": "La integración crítica precisa ganar terreno",
+    "paragraphs": [
+      "Precisamos avanzar en prácticas y reflexiones integradoras que, de forma crítica y responsable, favorezcan un enfrentamiento más efectivo de las desigualdades, injusticias sociales y desafíos ambientales complejos. Hace tiempo que testimoniamos los efectos negativos de la predominancia de una perspectiva de modernidad que fragmenta, aísla y desconecta partes de un todo – sea a nivel individual, social o ambiental.",
+      "Lo vemos en ideas y producciones orientadas a soluciones temporales o intereses particulares; en acciones y decisiones que ignoran las profundas conexiones entre elementos, seres y biomas en toda su diversidad; historias contadas por una sola voz, desconectada de tantas otras que conforman, de forma entrelazada, un mismo momento y una misma realidad temporal; en teorías y modelos aislados, rígidamente atados a sus propias certezas, y en tantos otros fenómenos que refuerzan esta lógica fragmentada.",
+      "Ante este escenario, tenemos dos opciones: aceptar y reproducir estas estructuras o buscar rupturas, nuevas perspectivas y cambios que promuevan una mayor conciencia, integración, justicia y equidad. Necesitamos más agentes sistémicos de transformación, que actúen con madurez y estén comprometidos con impactos positivos. Para ello, necesitamos modelos (y anti-modelos) que amplíen nuestro repertorio de acción.",
+      "¡Este material reitera nuestra intención de seguir contribuyendo con el campo de impacto socioambiental, para las organizaciones y para las personas del ecosistema! Por lo tanto, los invitamos a explorar el Modelo C, a reflexionar, construir y comprometerse con un enfoque más integrado y sistémico, que reconozca la complejidad y la interdependencia entre impacto y negocio, personas y territorio, presente y futuro. Que sea un instrumento vivo, capaz de estimular nuevas preguntas, fortalecer caminos e impulsar transformaciones que sean, de forma concreta, relevantes para o mundo que queremos construir."
+    ]
+  },
+  "partida": {
+    "tag": "Puntos de partida",
+    "left-title": "¿Para qué sirve?",
+    "right-title": "¿Para quién?",
+    "left-paragraphs": [
+      "Para apoyar el diagnóstico, la creación y la gestión de negocios que buscan integrar eficazmente su modelo de operación productiva y comercial con la lógica de generación de impacto socioambiental positivo.",
+      "Para que los negocios de impacto maduren, tornándose más capaces de alcanzar sus planes y ambiciones con flujos financieros y equipos saludables.",
+      "Problematizar, provocar y cuestionar a emprendedores y equipos sobre la forma en que conciben y gestionan sus negocios.",
+      "Para alinear los equipos y socios de negocios de impacto en torno a su propósito y su modelo de operación productivo y comercial.",
+      "Para crear posibilidades de una comunicación más comprensible entre el negocio y sus diferentes partes interesadas."
+    ],
+    "right-paragraphs": [
+      "Quienes desean crear, dirigir o gestionar un negocio de impacto: emprendedores y equipos.",
+      "Quienes buscan reinventar su organización: organizaciones en transición hacia la lógica de los negocios de impacto.",
+      "Quien asesora y apoya la maduración de negocios de impacto: aceleradoras, incubadoras y otros intermediarios.",
+      "Quien financia negocios de impacto: inversores de impacto, fondos y otros.",
+      "Quien enseña el tema: profesores en instituciones educativas, mentores, entre otros.",
+      "Cualquier persona interesada en la gestión de impacto."
+    ]
+  },
+    "modeloc": {
+    "tag": "Guia Modelo C 2.0",
+    "title": "¡Acceda y pruebe la nueva versión del Modelo C!",
+    "frame-description": {
+      "highlight": "Modelo C 2.0",
+      "paragraph": "para impresión"
+    },
+    "frame-impress": {
+      "href": "/frame-impressao-pt.pdf",
+      "thumb": "/thumb-frame.png",
+      "alt": "Frame para impressão modelo c"
+    },
+    "form-title": "Complete el formulario y descargue la nueva publicación.",
+    "form": {
+      "name": {
+        "label": "Nombre completo",
+        "placeholder": " Su nombre completo"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "Su correo"
+      },
+      "company": {
+        "label": "Organización (opcional)",
+        "placeholder": "Nombre de la Organización"
+      },
+      "submit": {
+        "text": "Continuar",
+        "submitting": "Preparando..."
+      },
+      "lgpd": "Sus datos serán utilizados únicamente para el monitoreamiento de la publicación. Al completar este formulario, también nos autoriza a enviar noticias relacionadas exclusivamente con el Modelo C." 
+    },
+    "guia-pdf-url": "/guia_modelo_c.pdf"
+
+  },
+  "features": {
+    "tag": "Diferencias",
+    "left-title": {
+      "first": "Las principales diferencias",
+      "second": "del Modelo C 2.0 son"
+    },
+    "feature-list": [
+      "Actualización de términos y conceptos",
+      "Nueva imagen orientadora",
+      "Mayor potencia en la integración de dimensiones",
+      "Nuevas camadas transversales para modelar negocios de impacto",
+      "Más recursos de apoyo para facilitar construcciones y despliegues",
+      "Una mirada más amplia a la gestión estratégica"
+    ],
+    "right-title": {
+      "first": "Quieres conocer la",
+      "second": "versión original del",
+      "third": "Modelo C",
+      "fourth": ", ampliamente utilizada por",
+      "fifth": "negocios de impacto",
+      "last": "en Brasil?"
+    },
+    "download-btn": "Descargue el Modelo C original aquí",
+    "original-pdf-url": "/guia-modelo-c-original.pdf"
+  },
+   "partners-section":{
+    "tag": "Realización",
+    "creation": "El modelo C es una realización de",
+    "coordination":"Coordinación de la versión 2.0",
+    "sponsorship": "Patrocinio",
+    "partners-footer": {
+      "first": "Otras organizaciones y personas contribuyeron con la construcción de las versiones del Modelo C,",
+      "second": "más informaciones pueden ser encontradas en",
+      "third": "la Ficha Técnica de la Guía del Modelo C 2.0."
+    }
+  }
+}

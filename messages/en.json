@@ -1,0 +1,130 @@
+{
+  "navLinks": {
+    "home": {
+      "name": "Home",
+      "path": "#inicio"
+    },
+    "manifest": {
+      "name": "Manifesto",
+      "path": "#manifesto"
+    },
+    "startingPoints": {
+      "name": "Starting Points",
+      "path": "#partida"
+    },
+    "cmodelGuide": {
+      "name": "Model C 2.0 Guide",
+      "path": "#modeloc"
+    },
+    "partners": {
+      "name": "Project Partners",
+      "path": "#realizadores"
+    }
+  },
+  "hero": {
+    "f-highlight": "Model C is more than a tool - ",
+    "f-paragraph": "it is a way of strengthening social and environmental impact businesses that transform the world while maintaining economic viability. In version 2.0, it has evolved without losing its essence: that of coherently integrating social and environmental impact with commercial and financial logic.",
+    "s-highlight": "The letter C continues to represent what makes Model C different: ",
+    "s-paragraph": " Complete, Collaborative, Connected to Complexity and Comprehensible. A model for businesses that want to grow with purpose and generate relevant change."
+  },
+  "manifest": {
+    "tag": "Manifesto",
+    "title": "Critical integration needs to gain ground",
+    "paragraphs": [
+      "We need to advance integrative practices and reflections aimed at enabling a more effective confrontation of inequalities, social injustices, and complex environmental challenges in a critical and responsible way. We have long witnessed the negative effects of the predominance of a prevailing view of modernity that fragments, isolates and disconnects parts of a whole, whether at an individual, social or environmental level.",
+      "We see this in ideas and creations focused on temporary solutions or particular interests, in actions and decisions that ignore the deep connections between elements, beings and biomes in all their diversity, in stories told by a single voice, disconnected from many others that intricately shape the same moment and temporal reality, in isolated theories and models rigidly bound to their own certainties, and in so many other phenomena that reinforce this logic of fragmentation.",
+      "Faced with this scenario, we have two choices: to accept and reproduce these structures, or to seek ruptures, new perspectives and changes that promote greater awareness, integration, justice, and equity. We need more systemic agents of transformation that act with maturity and that are committed to generating positive impacts. To this end, we need models (and anti-models) that expand our repertoire of action.",
+      "This material reiterates our intention, which is to continue contributing to the field of social and environmental impact, supporting organizations and people within the ecosystem! Therefore, we would like to invite you to explore Model C, to reflect, build and commit to a more integrated and systemic approach that recognizes the complexity and interdependence between impact and business, people, and territories, present and future. May Model C be a living instrument, capable of inspiring new questions, strengthening pathways, and driving transformations that truly matter for the world we seek to build."
+    ]
+  },
+  "partida": {
+    "tag": "Starting points",
+    "left-title": "What is Model C for?",
+    "right-title": "For whom?",
+    "left-paragraphs": [
+      "To support the assessment, creation, and management of businesses that aim to effectively integrate their productive and commercial operating model with a strategy for generating a positive socio-environmental impact.",
+      "To see impact businesses mature, becoming more capable of achieving their plans and ambitions, while maintaining healthy financial flows and teams.",
+      "To challenge, provoke, and inspire entrepreneurs and teams to critically reflect on how they conceive and manage the businesses they are part of.",
+      "To align impact business teams and partners around their purpose and productive and commercial operating model.",
+      "To create possibilities for more comprehensible communication between the business and its different stakeholders."
+    ],
+    "right-paragraphs": [
+      "For those who wish to create, lead or operate an impact business: entrepreneurs and teams.",
+      "For those looking to reinvent their organization: organizations in transition to the logic of impact business.",
+      "For those who advise and support the maturing of impact businesses: accelerators, incubators, and other intermediaries.",
+      "For those who finance impact businesses: impact investors, funds, among others.",
+      "For those who teach the subject: teachers from educational institutions, mentors, and others.",
+      "For anyone interested in impact management."
+    ]
+  },
+  "modeloc": {
+    "tag": "Model C 2.0 Guide",
+    "title": "Access and try the latest version of Model C!",
+    "frame-description": {
+      "highlight": "Model C 2.0 ",
+      "paragraph": "for printing"
+    },
+    "frame-impress": {
+      "href": "/frame-impressao-pt.pdf",
+      "thumb": "/thumb-frame.png",
+      "alt": "Modelo C printable frame"
+    },
+    "form-title": "Fill in the form and download the new publication.",
+    "form": {
+      "name": {
+        "label": "Full name",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "Your email"
+      },
+      "company": {
+        "label": "Organization (optional)",
+        "placeholder": "Organization name"
+      },
+      "submit": {
+        "text": "Continue",
+        "submitting": "Preparing..."
+      },
+      "lgpd": "Your data will only be used to monitor the publication. By filling in this form, you also authorize us to receive news exclusively related to Model C."
+    },
+    "guia-pdf-url": "/guia_modelo_c.pdf"
+  },
+  "features": {
+    "tag": "Features",
+    "left-title": {
+      "first": "The main distinguishing",
+      "second": "features of Model C 2.0 are "
+    },
+    "feature-list": [
+      "Update of terms and concepts",
+      "New guiding image",
+      "Greater power in integrating dimensions",
+      "New transversal layers for impact business modelling",
+      "More support resources to facilitate building and unfolding",
+      "A broader perspective focused on strategic management."
+    ],
+    "right-title": {
+      "first": "Want to explore the",
+      "second": "original version of",
+      "third": "Model C",
+      "fourth": ", widely used by",
+      "fifth": "impact businesses",
+      "last": "in Brazil?"
+    },
+    "download-btn": "Get the original Model C Guide here",
+    "original-pdf-url": "/guia-modelo-c-original.pdf"
+  },
+  "partners-section":{
+    "tag": "Project Partners",
+    "creation": "Original creation",
+    "coordination":"Coordination of version 2.0",
+    "sponsorship": "Sponsorship",
+    "partners-footer": {
+      "first": "Other organizations and individuals have contributed to the construction of Model C versions,",
+      "second": "more information may be found in",
+      "third": "the Model C 2.0 Guide."
+    }
+  }
+}

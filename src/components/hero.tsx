@@ -5,7 +5,12 @@ import logo from "@/logos/modelo-c-hero.svg";
 import heroBalance from "@/logos/hero-balance.png";
 import Image from "next/image";
 
+import { useTranslations } from "next-intl";
+
 export default function Hero() {
+
+  const t = useTranslations('hero')
+
   return (
     <div className="flex flex-col md:flex-row lg:flex-row items-start md:items-center pl-5 pr-5 md:pl-24 md:pr-24">
       {/* Texto e logo */}
@@ -26,22 +31,15 @@ export default function Hero() {
         >
           <p className="text-sm">
             <span className="font-medium">
-              O Modelo C é mais do que uma ferramenta
+              {t('f-highlight')}
             </span>{" "}
-            — é um caminho para fortalecer negócios de impacto socioambiental
-            que transformam o mundo sem abrir mão da viabilidade econômica. Na
-            versão 2.0, ele evolui sem perder sua essência: integrar de forma
-            coerente impacto social e ambiental com lógica comercial e
-            financeira.
+            {t('f-paragraph')}
           </p>
           <p>
             <span className="font-medium">
-              A letra C continua a representar o que faz do Modelo C um
-              diferencial
+             {t('s-highlight')}
             </span>
-            : Completo, Colaborativo, Conectado à Complexidade e Compreensível.
-            Um modelo para negócios que querem crescer com propósito e gerar
-            mudanças relevantes.
+            {t('s-paragraph')}
           </p>
         </motion.div>
       </motion.div>

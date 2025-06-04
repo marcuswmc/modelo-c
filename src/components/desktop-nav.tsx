@@ -3,18 +3,31 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const links = [
-  { name: "Início", path: "#inicio" },
-  { name: "Manifesto", path: "#manifesto" },
-  { name: "Pontos de Partida", path: "#partida" },
-  { name: "Guia Modelo C 2.0", path: "#modeloc" },
-  { name: "Realização", path: "#realizadores" },
-];
+import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./localeSwitcher";
 
 export default function DesktopNav() {
   const [activeSection, setActiveSection] = useState("");
 
-  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
+  const t = useTranslations("navLinks");
+  const linkKeys = [
+    "home",
+    "manifest",
+    "startingPoints",
+    "cmodelGuide",
+    "partners",
+  ];
+
+  const navLinks = linkKeys.map((key) => ({
+    key,
+    name: t(`${key}.name`),
+    path: t(`${key}.path`),
+  }));
+
+  const handleScroll = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    targetId: string
+  ) => {
     event.preventDefault();
     const section = document.querySelector(targetId);
     if (section) {
@@ -26,14 +39,18 @@ export default function DesktopNav() {
     const handleScrollSpy = () => {
       const scrollPosition = window.scrollY;
 
-      links.forEach(({ path }) => {
+      navLinks.forEach(({ path }) => {
         if (path.startsWith("#")) {
           const section = document.querySelector(path);
           if (section) {
-            const offsetTop = section.getBoundingClientRect().top + window.scrollY;
+            const offsetTop =
+              section.getBoundingClientRect().top + window.scrollY;
             const offsetBottom = offsetTop + section.clientHeight;
-            
-            if (scrollPosition >= offsetTop - 200 && scrollPosition < offsetBottom - 10) {
+
+            if (
+              scrollPosition >= offsetTop - 200 &&
+              scrollPosition < offsetBottom - 10
+            ) {
               setActiveSection(path);
             }
           }
@@ -46,21 +63,25 @@ export default function DesktopNav() {
   }, []);
 
   return (
-    <nav className="flex gap-8">
-      {links.map((link, index) => (
+    <nav className="flex gap-6">
+      {navLinks.map(({ key, name, path }) => (
         <Link
-          href={link.path}
-          key={index}
-          onClick={(event) => handleScroll(event, link.path)}
+          href={path}
+          key={key}
+          onClick={(event) => handleScroll(event, path)}
           className={`${
-            activeSection === link.path
+            activeSection === path
               ? "bg-custom-purple border-custom-purple text-white"
               : "border-black text-black"
-          } pt-1.5 pb-1.5 pl-5 pr-5 rounded-full border font-medium text-sm cursor-pointer transition-colors`}
+          } flex flex-col justify-center pt-1 pb-1 pl-5 pr-5 rounded-full border font-medium text-[14px] cursor-pointer transition-colors`}
         >
-          {link.name}
+          {name}
         </Link>
       ))}
+
+      <div>
+        <LocaleSwitcher />
+      </div>
     </nav>
   );
 }

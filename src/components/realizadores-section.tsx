@@ -1,3 +1,6 @@
+
+import { useTranslations } from "next-intl";
+
 import Image from "next/image";
 import moveLogo from "@/logos/move-logo.png";
 import senselabLogo from "@/logos/sense-lab-logo.png";
@@ -10,16 +13,17 @@ import Link from "next/link";
 
 
 export default function RealizadoresSection() {
+  const  t  = useTranslations("partners-section");
   return (
     <div className="flex flex-col w-full p-5 md:pl-24 gap-6">
       <div className="pb-10 md:pb-20">
         <span className="pt-4 pb-4 pl-8 pr-8 rounded-full font-medium bg-custom-green text-tag">
-          Realização
+          {t('tag')}
         </span>
       </div>
       <div>
         <h2 className="pb-5 font-medium text-sm leading-tight">
-        O Modelo C é uma realização de:
+        {t('creation')}:
         </h2>
         <div className="flex items-center">
           <div>
@@ -37,7 +41,7 @@ export default function RealizadoresSection() {
       </div>
       <div>
         <h2 className="pb-5 font-medium text-sm leading-tight">
-        Coordenação da versão 2.0:
+        {t('coordination')}:
         </h2>
         <div className="flex items-center">
           <div>
@@ -47,7 +51,7 @@ export default function RealizadoresSection() {
       </div>
       <div>
         <h2 className="pb-5 font-medium text-sm leading-tight">
-          Patrocínio:
+          {t('sponsorship')}:
         </h2>
         <div className="flex flex-wrap items-center gap-5">
           <div>
@@ -79,7 +83,7 @@ export default function RealizadoresSection() {
       </div>
       <div>
         <h3 className=" pb-10 text-[14px] leading-tight">
-        *Outras organizações e pessoas contribuíram para a construção das versões do Modelo C,<br/> mais informações podem ser encontradas na <Link href={"#modeloc"} className="font-medium">Ficha Técnica do Guia Modelo C 2.0.</Link>
+        *{t('partners-footer.first')}<br/> {t('partners-footer.second')} <Link href={"#modeloc"} className="font-medium">{t('partners-footer.third')}</Link>
         </h3>
       </div>
     </div>
