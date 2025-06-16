@@ -3,10 +3,13 @@
 import { motion } from "framer-motion";
 import logo from "@/logos/modelo-c-hero.svg";
 import Image from "next/image";
-
 import { useTranslations } from "next-intl";
 
-export default function Hero() {
+interface HeroProps {
+  imageUrl: string;
+}
+
+export default function Hero({ imageUrl }: HeroProps) {
 
   const t = useTranslations('hero')
 
@@ -50,7 +53,7 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
         className="flex items-center justify-end w-full pt-16 md:pt-0 md:w-[50%] lg:w-[50%]"
       >
-        <Image src={t('imageUrl')} alt="balance" width={550} height={550} quality={100} priority/>
+        <Image src={imageUrl} alt="balance" width={550} height={550} quality={100} priority/>
       </motion.div>
     </div>
   );
