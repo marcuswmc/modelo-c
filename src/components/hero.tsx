@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import logo from "@/logos/modelo-c-hero.svg";
-import heroBalance from "@/logos/hero-balance.png";
 import Image from "next/image";
 
 import { useTranslations } from "next-intl";
@@ -51,7 +50,7 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
         className="flex items-center justify-end w-full pt-16 md:pt-0 md:w-[50%] lg:w-[50%]"
       >
-        <Image src={heroBalance} alt="balance" width={550} quality={100} />
+        <Image src={t('imageUrl')} alt="balance" width={550} height={550} quality={100} priority/>
       </motion.div>
     </div>
   );
