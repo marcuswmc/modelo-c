@@ -54,7 +54,7 @@ export default function FormSection() {
           <div className="hidden md:flex flex-col gap-5">
             <div className="m-auto ml-0">
               <div className="rounded-md p-2 shadow hover:translate-y-2.5 transition-transform">
-                <Link href={t('frame-impress.href')}>
+                <Link href={t('frame-impress.frame-url')}>
                   <Image
                     src={t('frame-impress.thumb')}
                     alt={t('frame-impress.alt')}
@@ -110,7 +110,7 @@ export default function FormSection() {
         </div>
         <div className="m-auto">
           <div className="rounded-md p-2 shadow hover:translate-y-2.5 transition-transform">
-            <Link href={t('frame-impress.href')} target={"_blank"}>
+            <Link href={t('frame-impress.frame-url')} target={"_blank"}>
               <Image
                 src={t('frame-impress.thumb')}
                 alt={t('frame-impress.alt')}
