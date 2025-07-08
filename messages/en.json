@@ -65,10 +65,10 @@
       "paragraph": "for printing"
     },
     "frame-impress": {
-      "frame-url": "/frame-impressao-en.pdf",
       "thumb": "/thumb-frame.png",
       "alt": "Modelo C printable frame"
     },
+    "frame-url": "/frame-impressao-en.pdf",
     "form-title": "Fill in the form and download the new publication.",
     "form": {
       "name": {
